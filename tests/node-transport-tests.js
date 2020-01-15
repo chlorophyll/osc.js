@@ -337,14 +337,4 @@ jqUnit.asyncTest("Send an OSC message via TCP", function () {
     tcpServer.listen(port, function () {
         tcpClientPort.open();
     });
-
-
-    /****************
-     * Serial Tests *
-     ****************/
-
-    QUnit.test("Serial port support has been loaded.", function () {
-        QUnit.expect(1);
-        QUnit.ok(osc.supportsSerial);
-    });
 });
